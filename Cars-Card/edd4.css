@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+  overflow: hidden;
+}
+.cards .card {
+  background: linear-gradient(50deg, hsl(0deg, 100%, 64%), rgb(93, 0, 255));
+  color: white;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card-img {
+  width: 100%;
+  overflow: hidden;
+}
+.card-img img {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.44s ease-in-out;
+}
+.card-img img:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  margin-top: 10px;
+}
+.card-body .card-price {
+  padding: 5px;
+}/*# sourceMappingURL=edd4.css.map */

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  font-weight: 500;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #d0f0c0;
+}
+body section {
+  background: url(../ePhotos/1610240074_8-p-belii-fon-v-krapinku-12.png);
+  background-size: contain;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 95%;
+  max-width: 1200px;
+  margin: 5rem auto;
+  justify-content: space-around;
+}
+body .cartbtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  padding: 8px 30px;
+  text-align: center;
+}
+body .cartbtn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  height: 1.5px;
+  width: 55px;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
+}
+body .cartbtn:hover::after {
+  position: absolute;
+  width: 80px;
+  transform: translatex(-12.5px) translatey(1px);
+  background-color: orange;
+  height: 2px;
+}
+body .btn-cart {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  border: none;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(255, 181, 249);
+  padding: 8px 30px;
+  text-align: center;
+}
+body .btn-cart::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgb(0, 187, 28);
+  height: 1.5px;
+  width: 69px;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
+}
+body .btn-cart:hover::after {
+  position: absolute;
+  width: 90px;
+  transform: translatex(-10px) translatey(1px);
+  background-color: rgb(0, 0, 0);
+  height: 2px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 0.7);
+  overflow: hidden;
+  border-radius: 7px;
+  max-width: 250px;
+}
+.item div {
+  width: 100%;
+  height: 100%;
+  padding: 8px 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  border-radius: 4px;
+  transition: all 0.5s ease-out;
+}
+.item img:hover {
+  transform: scale(1.1);
+}
+.item .btn1 {
+  background-color: steelblue;
+  color: rgb(240, 255, 230);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px auto;
+  padding: 0px 20px;
+}
+.item .btn1:hover {
+  background-color: #3f75a2;
+  color: white;
+}
+
+#modal1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.5);
+  text-align: center;
+  display: none;
+}
+#modal1 h2 {
+  color: white;
+  margin-top: 30px;
+}
+#modal1 [modal-body1] {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+#modal1 [modal-body1] .card1 {
+  background-color: bisque;
+  margin: 5px;
+  border-radius: 5px;
+}/*# sourceMappingURL=edd1.css.map */
