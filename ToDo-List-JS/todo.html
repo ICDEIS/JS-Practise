@@ -4,13 +4,29 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
    <link rel="stylesheet" href="./todo.css">
-   <title>ToDo-list</title>
+   <title>DEVISS Reminder</title>
 </head>
 <body>
-   <button class="btn">Submit</button>
-
-
+   <header>
+      <h1>DEVISS Reminder</h1>
+   </header>
+   <form>
+      <input type="text" id="title-in">
+      <button class="btna">
+         <i class="bi bi-plus-square-fill"></i>
+      </button>
+   </form>
+   <div class="list">
+      <ul class="list-ul">
+         <div class="todo">
+            <li class="todo-item">DEVISS</li>
+            <button class="check-button"><i class="bi bi-check"></i></button>
+            <button class="delete-button"><i class="bi bi-trash2-fill"></i></button>
+         </div>
+      </ul>
+   </div>
 
 <script src="./todo.js"></script>
 </body>
