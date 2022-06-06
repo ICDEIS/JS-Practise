@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
    
 // Event Listener
    button.addEventListener('click', addTitle);
-   listUl.addEventListener('click', deleteItem)
+   listUl.addEventListener('click', deleteItem);
+
 
 // Function
    function addTitle(event) {
@@ -39,16 +40,20 @@ window.addEventListener('DOMContentLoaded', () => {
    }
    function deleteItem(e) {
       const items = e.target;
-      const item = items.parentElement;
 
       if(items.classList[0] === 'delete-button') {
-         item.remove()
-      }
-      if(items.classList[0] = 'check-button') {
-         item.classList.add('line-through')
-      }
-   };
-   
+         const item = items.parentElement;
+         item.classList.add('deleting');
+         setTimeout(() => {
+            item.remove()
 
+         },350)
+      }
+      if(items.classList[0] === 'check-button') {
+         const item = items.parentElement;
+         item.classList.toggle('lining') 
+      }
+   }
 
+   console.log(button)
 })
