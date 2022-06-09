@@ -44,6 +44,7 @@ form button:hover {
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: all ease-in-out .5s;
 }
 .list-ul {
    list-style: none;
@@ -98,4 +99,40 @@ form button:hover {
 .lining {
    text-decoration: line-through;
    opacity: .59;
+}
+
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border: none;
+   outline: none;
+} 
+.select {
+   margin: 1rem;
+   position: relative;
+   overflow: hidden;
+}
+select {
+   color: rgb(255, 145, 0);
+   cursor: pointer;
+   width: 10rem;
+   padding: 1rem;
+   border-radius: 7px;
+}
+.select::after {
+   content: "\25BC";
+   position: absolute;
+   background: rgb(255, 145, 0);
+   top: 0;
+   right: 0;
+   color: white;
+   padding: 1rem;
+   border-radius: 0 7px 7px 0;
+   pointer-events: none;
+   transition: all ease-in .2s;
+}
+.select:hover::after {
+   background: white;
+   color: rgb(255, 145, 0);
 }
