@@ -27,6 +27,6 @@ function realTime() {
    
    minute.innerHTML = realMinutes
 }
-
-setInterval(realTime, 1)
+realTime()
+setInterval(realTime, 1000)
 
