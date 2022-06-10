@@ -12,6 +12,7 @@ body {
    height: 100vh;
    background: linear-gradient(to left, rgb(16, 152, 16), rgb(25, 135, 252));
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    overflow: hidden;
@@ -19,5 +20,34 @@ body {
 .cona {
    color: white;
    transform: translateY(-50px);
+   font-size: 5rem;
+   background: linear-gradient(75deg, red, blue);
+   padding: 10px 20px;
+   border-radius: 10px;
+   box-shadow: inset 0 0 20px 5px rgb(167, 33, 174);
+}
+span.session {
    font-size: 4rem;
+}
+.date {
+   color: white;
+   font-size: 3.5rem;
+   background: linear-gradient(75deg, rgb(219, 0, 0), rgb(0, 0, 228));
+   padding: 10px 15px;
+   border-radius: 8px;
+   box-shadow: inset 0 0 10px 3px rgb(167, 33, 174);
+}
+.date span:nth-child(2) {
+   padding-left: 13px;
+}
+.date span:nth-child(3) {
+   padding-right: 13px;
+}
+.dc {
+   position: absolute;
+   font-size: 2rem;
+   font-family: copperplate;
+   font-weight: 100;
+   bottom: 5%;
+   color: white;
 }
