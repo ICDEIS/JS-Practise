@@ -1,6 +1,12 @@
 *, *::before, *::after {
    box-sizing: border-box;
    font-family: 'Microsoft Sans Serif' gotham;
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
 }
 body {
    background: linear-gradient(to left, rgb(211, 201, 0), rgb(0, 190, 76));
