@@ -1,0 +1,23 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-family: 'Microsoft Sans Serif' gotham;
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+body {
+   height: 100vh;
+   background: linear-gradient(to left, rgb(16, 152, 16), rgb(25, 135, 252));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.cona {
+   color: white;
+   transform: translateY(-50px);
+   font-size: 4rem;
+}
