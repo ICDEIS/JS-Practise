@@ -1,0 +1,89 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-family: 'Microsoft Sans Serif' gotham;
+}
+body {
+   background: linear-gradient(to left, rgb(211, 201, 0), rgb(0, 190, 76));
+   display: flex;
+   min-height: 100vh;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.ds {
+   position: absolute;
+   top: 50%;
+   right: 53%;
+   font-family: copperplate;
+   font-weight: 100;
+   color: rgba(136, 136, 136, 0.8);
+}
+.cona-clock {
+   width: 500px;
+   height: 500px;
+   background-color: rgba(197, 231, 255, .8);
+   border-radius: 25%;
+   border: 2px solid rgb(0, 0, 0);
+   position: relative;
+}
+.cona-clock .number {
+   --rotation: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transform: rotate(var(--rotation));
+   font-size: 2rem;
+}
+.cona-clock .number1 { --rotation: 30deg; }
+.cona-clock .number2 { --rotation: 60deg; }
+.cona-clock .number3 { --rotation: 90deg; }
+.cona-clock .number4 { --rotation: 120deg; }
+.cona-clock .number5 { --rotation: 150deg; }
+.cona-clock .number6 { --rotation: 180deg; }
+.cona-clock .number7 { --rotation: 210deg; }
+.cona-clock .number8 { --rotation: 240deg; }
+.cona-clock .number9 { --rotation: 270deg; }
+.cona-clock .number10 { --rotation: 300deg; }
+.cona-clock .number11 { --rotation: 330deg; }
+
+.cona-clock::after {
+   content: '';
+   position: absolute;
+   right: 50%;
+   top: 50%;
+   background-color: black;
+   z-index: 27;
+   width: 17px;
+   height: 17px;
+   transform: translate(50%, -50%);
+   border-radius: 50%;
+}
+.cona-clock .arrow {
+   --rotation: 0;
+   background-color: black;
+   position: absolute;
+   bottom: 50%;
+   right: 50%;
+   transform: translateX(50%) rotate(calc(var(--rotation) * 1deg));
+   transform-origin: bottom;
+   border: .5px solid white;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   z-index: 23;
+}
+.cona-clock .arrow.second {
+   width: 5px;
+   height: 44%;
+   background-color: rgb(226, 65, 65);
+}
+.cona-clock .arrow.minute {
+   width: 7px;
+   height: 40%;
+   background-color: rgb(0, 161, 19)
+}
+.cona-clock .arrow.hour {
+   width: 10px;
+   height: 33%;
+   background-color: rgb(0, 0, 0);
+}
