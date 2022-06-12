@@ -1,0 +1,130 @@
+
+
+:root {
+   --bc-light: 215;
+   --bc-wrong: 0;
+   --bc-correct: 145;
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-family: 'Microsoft Sans Serif', gotham;
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+body {
+   --bc: var(--bc-light);
+   padding: 0;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(var(--bc), 100%, 35%);
+}
+.ic {
+   position: absolute;
+   bottom: 13%;
+   color: white;
+   font-family: copperplate, monospace;
+   font-weight: 100;
+}
+body.wrong {
+   background-color: hsl(0, 100%, 45%);
+}
+body.correct {
+   background-color: hsl(145, 100%, 45%);
+}
+.vibrate {
+   animation: vibrate .5s;
+}
+.cona {
+   width: 750px;
+   max-width: 80%;
+   background-color: azure;
+   border-radius: 10px;
+   padding: 12px;
+   box-shadow: 0 0 15px 5px azure;
+}
+#question {
+   font-size: 1.3rem;
+}
+.btn-grid {
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: .5rem;
+   margin: 40px 0 20px 0;
+}
+.btn {
+   --bc: var(--bc-light);
+   background-color: hsl(var(--bc), 100%, 85%);
+   border: hsl(var(--bc), 100%, 45%) 1.3px solid;
+   border-radius: .25rem;
+   font-size: 1.5rem;
+   padding: 7px;
+   outline: none;
+   cursor: pointer;
+}
+.btn:hover {
+   background-color: hsl(var(--bc), 100%, 77%);
+   border: hsl(var(--bc), 100%, 15%) 1.3px solid;
+}
+.btn.wrong {
+   --bc: var(--bc-wrong);
+}
+.btn.correct {
+   --bc: var(--bc-correct);
+}
+.start-btn, .next-btn {
+   font-size: 2.5rem;
+   font-weight: 600;
+   padding: 15px 35px;
+}
+.controls {
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+.hide {
+   display: none;
+}
+@keyframes vibrate{
+   0% {
+      transform: translateX(3px);
+   }
+   10% {
+      transform: translate(0, -2px);
+   }
+   20% {
+      transform: translate(-3px, 0);
+   }
+   30% {
+      transform: translate(3px, 2px);
+   }
+   40% {
+      transform: translate(2pxpx, -2px);
+   }
+   50% {
+      transform: translate(-2px, 2px);
+   }
+   60% {
+      transform: translate(2px, -1px);
+   }
+   70% {
+      transform: translate(-2px, 1px);
+   }
+   80% {
+      transform: translate(1px, -1px);
+   }
+   90% {
+      transform: translate(-1px, 1px);
+   }
+   100% {
+      transform: translate(0);
+   }
+}

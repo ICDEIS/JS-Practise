@@ -1,0 +1,140 @@
+*, *::before, *::after {
+   box-sizing: border-box;
+   font-family: 'Microsoft Sans Serif' gotham;
+   -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+   padding: 0;
+   margin: 0;
+}
+body {
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   transition: all 1s ease;
+   overflow-x: hidden;
+}
+.nav {
+   position: fixed;
+   top: 0;
+   z-index: 5;
+   width: 100%;
+}
+.nav ul {
+   width: 100%;
+   color: white;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+.nav ul li {
+   padding: 10px 15px;
+   cursor: pointer;
+}
+ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 1.3rem;
+}
+.cona1 {
+   background: linear-gradient(75deg, blue, red);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 1s ease;
+}
+.cona1 button {
+   padding: 10px 15px;
+   font-size: 2rem;
+   background: linear-gradient(120deg, yellow, pink);
+   border-radius: 8px;
+   border: none;
+   outline: none;
+}
+.cona2 {
+   background: linear-gradient(155deg, green, rgb(0, 170, 227));
+   height: 100vh;
+   position: relative;
+   transition: all 1s ease;
+}
+.cona2 button {
+   padding: 10px 15px;
+   font-size: 2rem;
+   background: linear-gradient(120deg, rgb(204, 255, 0), rgb(227, 166, 255));
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   position: absolute;
+   bottom: 25%;
+   right: 50%;
+   transform: translateX(50%);
+}
+.cona2 p {
+   color: white;
+   padding: 100px;
+   width: 70%;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 1.3rem
+}
+.cona3 {
+   background: linear-gradient(205deg, rgb(222, 141, 35), rgb(227, 0, 216));
+   height: 100vh;
+   position: relative;
+}
+.cona3 p {
+   position: absolute;
+   bottom: 20%;
+   color: white;
+   width: 70%;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 1.3rem;
+   right: 50%;
+   transform: translateX(50%);
+}
+.cona3 button {
+   padding: 10px 15px;
+   font-size: 2rem;
+   background: linear-gradient(120deg, rgb(204, 255, 0), rgb(227, 166, 255));
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   position: absolute;
+   bottom: 55%;
+   right: 50%;
+   transform: translateX(50%);
+}
+.cona4 {
+   background: linear-gradient(205deg, rgb(69, 86, 235), rgb(183, 110, 0));
+   height: 100vh;
+   position: relative;
+}
+.cona4 p {
+   position: absolute;
+   width: 70%;
+   text-align: center;
+   font-size: 1.3rem;
+   top: 30%;
+   right: 50%;
+   transform: translateX(50%);
+   background-color: bisque;
+   padding: 10px 15px;
+   border-radius: 8px;
+}
+.cona4 button {
+   padding: 10px 15px;
+   font-size: 2rem;
+   background: linear-gradient(220deg, rgb(150, 186, 4), rgb(104, 18, 144));
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   position: absolute;
+   bottom: 25%;
+   right: 50%;
+   transform: translateX(50%);
+   color: white;
+}
