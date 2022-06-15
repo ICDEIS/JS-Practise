@@ -30,6 +30,10 @@ function realTime() {
       hour.innerHTML = realHours
    } if(realHours > 12) {
       hour.innerHTML = (realHours - 12)
+   } if(realMinutes < 10) {
+      minute.innerHTML = `0${realMinutes}`
+   } if(realMinutes > 10) {
+      minute.innerHTML = realMinutes
    } if(realSeconds < 10) {
       second.innerHTML = `0${realSeconds}`
    } else {
